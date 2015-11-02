@@ -1,0 +1,52 @@
+<script>
+jQuery(document).ready(function(){
+$( document ).on( 'keydown', function ( e ) { 
+alert(e.keyCode);
+    if ( e.keyCode === 13) { // ESC
+       $( "#password" ).focus()
+    } 
+});})
+</script>
+<ion-pane class="signup">
+      <ion-header-bar class="bar-stable">
+		<div class="row signup_hdr">
+			<div class="col">
+				<a href=""><i class="icon ion-ios-close-empty" id="signup_close"></i></a>
+				<span id="signup_data">Sign Up</span>
+			</div>
+		</div>
+      </ion-header-bar>
+      <ion-content>
+		<div class="row signup_con">
+			<div class="col">
+				<center><img src="img/plus.png" id="plus_img"></center>
+			</div>
+		</div>
+		
+		<div class="sign_up"><!--form section!-->
+    	<label>Name</label>
+        <input class="sign_name" id="sign_name" type="text" placeholder="Name" />
+        <hr />
+        
+        <label>Email</label>
+        <input class="sign_email" id="sign_email" type="text" placeholder="Email" />
+        <hr />
+        <label>Password</label>
+        <input class="sign_password" id="sign_password"  type="password" placeholder="Password" />
+        <hr />
+        <label>Birthday</label>
+        <input  class="sign_birthday" id="sign_birthday" type="date" placeholder="DD/MM/YY" />
+        <hr />
+        
+		
+		
+    </div><!--form section!-->
+      </ion-content>
+	  <ion-footer-bar align-title="left" class="bar-royal">
+	  <div  id="signup_submit">
+		  <button class="button button-full button-royal">
+			<center><i class="icon ion-ios-checkmark-empty"></i></center>
+		</button>
+		</div>
+	</ion-footer-bar>
+    </ion-pane>

@@ -1,0 +1,68 @@
+    <ion-pane class="settings_pane">
+      <ion-content>
+		<div class="row setting_hdr">
+			<div class="col col-75">
+			<form name="tabTest" method="post" action="tab">           
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs">
+            <ul>
+				 <a href="#sidebar" rel="sidebar" class="sidebar-menu"><i class="icon ion-android-menu" id="set_menu"></i></a>
+				<span id="set_heading">Settings</span>
+			</ul>
+			</div>
+			</form>
+			</div>
+			<div class="col col-25">
+				<a href="#"><i class="icon ion-image" id="set_imagehdr"></i></a>
+				<a href="#"><i class="icon ion-log-out" id="set_logout"></i></a>
+			</div>
+		</div>
+		<div class="set_image">
+			<center><img src="img/avatar.png" id="set_avatar"></center>
+		</div>
+		<div class="set_list set_form">
+			<div class="list">
+				<div class="item item-divider">
+					General
+				</div>
+				<label class="item item-input">
+                	<span>Name</span>
+					<input type="text" placeholder="Name">
+				</label>
+				<label class="item item-input">
+                	<span>Email</span>
+					<input type="email" placeholder="Email">
+				</label>
+				<label class="item item-input">
+                	<span>Password</span>
+					<input type="password" placeholder="Password">
+				</label>
+				<label class="item item-input">
+                	<span>Birhtday</span>
+					<input type="text" placeholder="Birthday">
+				</label>
+				<div class="item item-divider">
+					Notifications
+				</div>
+				 <li class="item item-toggle">
+					 Email Notifications
+					 <label class="toggle toggle-positive">
+					   <input type="checkbox">
+					   <div class="track">
+						 <div class="handle"></div>
+					   </div>
+					 </label>
+				 </li>
+				 <li class="item item-toggle">
+					 Phone Notifications
+					 <label class="toggle toggle-positive">
+					   <input type="checkbox">
+					   <div class="track">
+						 <div class="handle"></div>
+					   </div>
+					 </label>
+				 </li>
+			</div>
+		</div>
+      </ion-content>
+    </ion-pane>

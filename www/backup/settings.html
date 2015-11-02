@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane class="settings_pane">
+      <ion-content>
+		<div class="row setting_hdr">
+			<div class="col col-75">
+				<a href="#"><i class="icon ion-android-menu" id="set_menu"></i></a>
+				<span id="set_heading">Settings</span>
+			</div>
+			<div class="col col-25">
+				<a href="#"><i class="icon ion-image" id="set_imagehdr"></i></a>
+				<a href="#"><i class="icon ion-log-out" id="set_logout"></i></a>
+			</div>
+		</div>
+		<div class="set_image">
+			<center><img src="img/avatar.png" id="set_avatar"></center>
+		</div>
+		<div class="set_list">
+			<div class="list">
+				<div class="item item-divider">
+					General
+				</div>
+				<label class="item item-input">
+					<input type="text" placeholder="Name">
+				</label>
+				<label class="item item-input">
+					<input type="email" placeholder="Email">
+				</label>
+				<label class="item item-input">
+					<input type="password" placeholder="Password">
+				</label>
+				<label class="item item-input">
+					<input type="text" placeholder="Birthday">
+				</label>
+				<div class="item item-divider">
+					Notifications
+				</div>
+				 <li class="item item-toggle">
+					 Email Notifications
+					 <label class="toggle toggle-positive">
+					   <input type="checkbox">
+					   <div class="track">
+						 <div class="handle"></div>
+					   </div>
+					 </label>
+				 </li>
+				 <li class="item item-toggle">
+					 Phone Notifications
+					 <label class="toggle toggle-positive">
+					   <input type="checkbox">
+					   <div class="track">
+						 <div class="handle"></div>
+					   </div>
+					 </label>
+				 </li>
+			</div>
+		</div>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

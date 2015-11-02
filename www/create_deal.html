@@ -1,0 +1,83 @@
+    <ion-pane class="createdeal_pane">
+      <ion-content>
+		<div class="row create_hdr">
+			<div class="col col-75">
+			<form name="tabTest" method="post" action="tab">           
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs">
+            <ul>
+				  <a href="#sidebar" rel="sidebar" class="sidebar-menu"><i class="icon ion-navicon" id="pro_nav"></i></a>
+				 <span id="pro_profile">Create New Deal</span>
+			</ul>
+			</div>
+			</form>
+			</div>
+			<div class="col col-25">
+				<a href="#"><i class="icon ion-android-image" id="create_hdrimg"></i></a>
+			</div>
+		</div>
+		<div class="row create_addtitle">
+			<div class="col">
+				<div class="list">
+				  <label class="item item-input item-floating-label create_label">
+					<!--<span class="input-label">Add Title</span>-->
+					<input type="text" placeholder="Add Title" id="add_title_create">
+				  </label>
+				  <label class="item item-input item-floating-label create_label">
+					<!--<span class="input-label">Add Description</span>-->
+					<input type="text" placeholder="Add Description" id="add_desc_create">
+				  </label>
+				</div>
+			</div>
+		</div>
+		<div class="row create_list">
+			<div class="col">
+				<div class="list space">
+				  <label class="item item-input item-stacked-label create_label">
+					<span class="input-label">Date</span>
+					<a href="#"><i class="icon ion-android-add float_right"></i></a>
+					<input type="text" placeholder="Tuesday, February 16,2015">
+					
+				  </label>
+				  <label class="item item-input item-stacked-label create_label">
+					<span class="input-label">Time</span>
+					<a href="#"><i class="icon ion-android-add float_right1"></i></a>
+					<input type="text" placeholder="9.00 AM">
+				  </label>
+				  <label class="item item-input item-stacked-label create_label">
+					<span class="input-label">Location</span>
+					<a href="#"><i class="icon ion-navigate float_right1"></i></a>
+					<input type="text" placeholder="Starbucks">
+				  </label>
+				  <label class="item item-input item-stacked-label create_label">
+					<span class="input-label">Deal Option</span>
+					<a href="#"><i class="icon ion-android-add float_right1"></i></a>
+					<input type="text" placeholder="Dinner JPY 3000">
+				  </label>
+				  <label class="item item-input item-stacked-label create_label">
+                  	<span class="input-label inp_lbnew">Add people</span>
+                    <em class="sm_avt"><img src='img/smavt.png' /> <img src='img/smavt.png' /> <img src='img/smavt.png' /></em>
+                  </label>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="create_makeadeal">
+			<div class="col">
+			 <form name="tabTest" method="post" action="tab">
+        <!-- default tab value 2 for Tab 3 -->            
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs">
+            <ul>
+               <a href="#walkthrough" rel="walkthrough" class="walkthrough-1 button button-full button-royal create_makeadeal_btn">
+				  <i class="icon ion-checkmark"></i> Make a Deal !fdfd
+				</a>
+            </ul>
+            
+        </div>
+		
+    </form>
+				
+			</div>
+		</div>
+      </ion-content>
+    </ion-pane>

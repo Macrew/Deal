@@ -1,0 +1,64 @@
+<script>
+jQuery(document).ready(function(){
+	var height=$( document ).height();
+	jQuery('.sidebar_pane').css("height",height);
+})
+</script>  
+
+  <div class="sidebar_pane">
+      <div>
+		<div class="row sidebar_hdr">
+			<div class="col col-75">
+			<form name="tabTest" method="post" action="tab">           
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs">
+            <ul>
+				 <a href="#sidebar" rel="sidebar" class="sidebar-menu"><i class="icon ion-ios-close-empty" id="close_sidebar"></i></a>
+			</ul>
+		</div>
+		</form>
+			</div>
+			<div class="col col-25">
+				<img src="img/avatar.png" id="sidebar_avatar">
+			</div>
+		</div>
+		
+		<div class="navigation">
+			<center><ul class="nav">
+			<form name="tabTest" method="post" action="tab">           
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs">
+            <ul>
+				<li><a class="deal-link"  rel="deal" href="#deal">Home</a></li>
+				<li><a href="#list" rel="list" class="mydeals">My Deals</a></li>
+				<li><a href="#">Invite Friends</a></li>
+				
+				<li><a href="#">My friends</a></li>
+				<li><a class="profile-link" href="#profile" rel="profile">Profile</a></li>
+				<li><a class="settings-link" href="#settings" rel="settings">Settings</a></li>
+			</ul>
+		</div>
+		<form>
+			</ul></center>
+		</div>
+		
+		<div class="footer">
+			<div class="left">
+			<form name="tabTest" method="post" action="tab">           
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs">
+            <ul>
+				 <a href="#sidebar" rel="settings" class="sidebar-menu"><i class="icon ion-gear-b" id="setting"></i></a>
+				 <a href="#sidebar" rel="settings" class="sidebar-menu"><p class="set_data">Settings</p></a>
+			</ul>
+			
+		</div>
+		</form>
+			</div>
+			<div class="right">
+				<a href="#home" id="logout" rel="home"><i class="icon ion-log-out" id="logout"></i></a>
+				<a href="#home" id="logout" rel="home"><p class="logout_data">Logout</p></a>
+			</div>
+		</div>
+      </div>
+    </div>

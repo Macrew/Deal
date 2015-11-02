@@ -1,0 +1,73 @@
+ <div id="walkthrough">
+	<link href="css/jquery.ui.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+
+    <!-- your app's js -->
+	<script src="js/jquery.ui.js"></script>
+	<script src="js/jquery.min.js"></script>
+<ion-pane class="walkthrough_pane">
+<ion-content ng-controller="MainCtrl">
+<ion-side-menus>
+<ion-side-menu-content>
+<ion-pane>
+<ion-header-bar class="bar-stable">
+	<div class="row walkthrough_hdr">
+		<div class="col">
+			<button class="button icon button-clear ion-android-menu" id="walkthrough_menu" ng-click="toggleLeft()"></button>
+			<span id="walkthrough_heading">Walkthrough</span>
+		</div>
+	</div>
+</ion-header-bar>
+<ion-content>
+	<div class="walk_slider">
+		<ion-slide-box pager-click="navSlide(index)">
+			<ion-slide>
+				<div class="a">
+					<div class="list card">
+
+					  
+
+					  <div class="item bg-one" >
+						<center>
+							<ul id="bg-one-ul">
+							<form name="tabTest" method="post" action="tab">
+        <!-- default tab value 2 for Tab 3 -->            
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs" class="tabs-direct walk_tab">
+            <ul>
+				<li><i class="icon ion-ios-checkmark-outline slide_chk "></i> <a class="profile-link" href="#profile" rel="profile">Accept</a></li>
+				<li><i class="icon ion-ios-checkmark-outline slide_chk"></i> <a href="#">Modify</a></li>
+				<li><i class="icon ion-ios-checkmark-outline slide_chk"></i> <a href="#">Reject</a></li>
+            </ul>
+            
+        </div>
+    </form>
+								
+							</ul>
+						</center> 
+					  </div>
+
+					  <div class="item slider_footer">
+						<center><p>Manage your deals quickly <br /> and efficiently.</p></center>
+					  </div>
+
+					</div>
+				</div>
+			</ion-slide>
+			
+		
+		</div>	
+</ion-content>
+
+</ion-pane>
+</ion-side-menu-content>
+  
+
+
+</ion-side-menus>
+</ion-content>
+</ion-pane>
+</div>

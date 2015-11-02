@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="MainCtrl">
+	<ion-pane class="list_pane">
+      <ion-content>
+		<div class="row list_hdr">
+			<div class="col col-50">
+				<button class="button icon button-clear ion-android-menu" id="list_menu" ng-click="toggleLeft()"></button>
+				
+				<span id="list_heading">Lists</span>
+			</div>
+			<div class="col col-50">
+				<a href="#"><i class="icon ion-forward" id="list_forward"></i></a>
+				<a href="#"><i class="icon ion-ios-plus-empty" id="list_add"></i></a>
+				<a href="#"><i class="icon ion-ios-search" id="list_search"></i></a>
+			</div>
+		</div>
+		<div class="row mydeals_img">
+			<div class="col">
+				<center><span id="list_mydeal">My Deals</span> <br /> <small id="list_project">PROJECTS</small></center>
+			</div>
+		</div>
+		<div class="list">
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+					Design new app for the deal
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Hanshin will Win
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Designing for Mobile
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Work on House Cleaning by morning
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Find the Solution by Friday this week 
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Design explorations for new project
+				</div>
+			</label>
+		</div>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

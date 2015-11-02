@@ -1,0 +1,54 @@
+	<script>
+ $(document).ready(function() {
+	// jQuery('#create_deal').load('create_deal.html');
+	});
+	</script>
+	<ion-pane class="deal_pane">
+      <ion-content>
+		<div class="row deal_hdr">
+			<div class="col col-50">
+				 <i class="icon ion-android-menu" id="deal_menu"></i>
+			</div>
+			<div class="col col-50">
+				<span class="text-right" id="deal_username">Tokyo, Japan</span>
+				<img src="img/avatar.png" id="deal_avatar">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<center><p id="deal_hdrdata">Lets make a Deal !</p></center>
+			</div>
+		</div>
+		<div class="row" id="deal_dealimg">
+			<div class="col">
+			<form name="tabTest" method="post" action="tab">
+        <!-- default tab value 2 for Tab 3 -->            
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs">
+            <ul>
+               <a href="#create_deal" rel="create_deal"> <center><img src="img/deal.png"></center></a>
+            </ul>
+            
+        </div>
+    </form>
+				
+			</div>
+		</div>
+		<div class="row" id="deal_mydealsbtn">
+			<div class="col">
+				<button class="button button-full button-royal mydeals">
+					My Deals
+				</button>
+			</div>
+		</div>
+		<div class="row" id="deal_month">
+			<div class="col">
+				<center><p id="month">October 2015</p></center>
+				<center><i class="icon ion-ios-arrow-down" id="down_arrw"></i></center>
+			</div>
+		</div>
+      </ion-content>
+    </ion-pane>
+	 <div id="create_deal">
+				
+			</div>

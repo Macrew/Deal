@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\phonegap\phonegap\platforms\android\phonegap-facebook-plugin\hellotest-FacebookLib\assets"/></dataSet><dataSet config="debug"><source path="E:\phonegap\phonegap\platforms\android\phonegap-facebook-plugin\hellotest-FacebookLib\src\debug\assets"/></dataSet></merger>

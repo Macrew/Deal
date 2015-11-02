@@ -1,0 +1,77 @@
+
+	<ion-pane class="list_pane">
+      <ion-content>
+		<div class="row list_hdr">
+			<div class="col col-50">
+			<form name="tabTest" method="post" action="tab">           
+        <input type="hidden" name="currentTab" value="2"/> 
+        <div id="tabs">
+            <ul>
+				<a href="#sidebar" rel="sidebar" class="sidebar-menu button icon button-clear ion-android-menu" id="list_menu" ng-click="toggleLeft()"></a>
+			</ul>
+		</div>
+		</form>
+				<span id="list_heading">Lists</span>
+			</div>
+			<div class="col col-50">
+				<a href="#"><i class="icon ion-forward" id="list_forward"></i></a>
+				<a href="#"><i class="icon ion-ios-plus-empty" id="list_add"></i></a>
+				<a href="#"><i class="icon ion-ios-search" id="list_search"></i></a>
+			</div>
+		</div>
+		<div class="row mydeals_img">
+			<div class="col">
+				<center><span id="list_mydeal">My Deals</span> <br /> <small id="list_project">PROJECTS</small></center>
+			</div>
+		</div>
+		<div class="list">
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				<i class="uncheck radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+					Design new app for the deal
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Hanshin will Win
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Designing for Mobile
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Work on House Cleaning by morning
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Find the Solution by Friday this week 
+				</div>
+			</label>
+			<label class="item item-radio">
+				<input type="checkbox" name="group">
+				
+				<i class="radio-icon ion-checkmark list_check"></i>
+				<div class="item-content">
+				  Design explorations for new project
+				</div>
+			</label>
+		</div>
+      </ion-content>
+    </ion-pane>
